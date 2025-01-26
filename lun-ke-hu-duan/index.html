@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>
+  论客户端问题 | Dr. Henry Jekyll
+</title>
+
+      <link rel="stylesheet" href="https://archjh.github.io/henry.css">
+
+      
+
+      
+      
+    </head>
+
+    <body>
+        <header>
+            <div class="header-content">
+                <a class="header-content-title" href="https:&#x2F;&#x2F;archjh.github.io">Dr. Henry Jekyll</a>
+                <nav class="header-content-nav">
+                    <a href="#" class="header-content-nav-icon">
+                    <svg viewBox="0 0 18 15" width="18">
+                        <path fill="#5c5c5c" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                        <path fill="#5c5c5c" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                        <path fill="#5c5c5c" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                    </svg>
+                    </a>
+                    <div class="header-content-nav-trigger">
+                        
+                        
+                        <a class="header-content-nav-trigger-link" href="about">About</a>
+                        
+                        
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="blog">
+            
+<main class="page">
+    <article class="page-content" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="page-content-title" itemprop="name headline">论客户端问题</h1>
+        <div class="page-content-meta">
+            <time datetime="2024-06-23T00:00:00+00:00" itemprop="datePublished">June 23, 2024</time>
+        </div>
+        <div class="page-content-body" itemprop="articleBody">
+            <h1 id="fu-xiu-de-guan-fang">腐朽的官方</h1>
+<h3 id="frogeloderdui-wang-yi-tong-zhi-he-fa-xing-de-wei-xie">Frogeloder对网易统治合法性的威胁</h3>
+<p>根据MinecraftForge官网<a href="https://files.minecraftforge.net">https://files.minecraftforge.net</a>的定义：</p>
+<p><em>MinecraftForge 是一个改造 Minecraft 的基础文件以协调 MODs 之间的兼容性的库，方便开发和加载各种《我的世界》 MOD ，以 LGPL 协议开源。</em></p>
+<p>自网易在2017年盗用Forgeloder仓库代码以来，中国版minecraft的也就逐渐成为了minecraft JavaScript版mod开发社区第一个能够创造利润的官方社区。自从中国版minecraft诞生的第一天起，这个游戏发行版就没有任何建立在版权问题上的合法性，除此之外，我们还观察到网易所谓正版的真实性依据的不确定性。当我们提出什么是正版这个命题的时候，我们首先想到的可能是版权应用层面的分析方法，事实上，这种正版虽然看似很纯粹，但它给出的解释是没有代表性的，即使正版的可用范围由诠释权限定，但诠释权也只能给出如何正确使用版权的答案，对于具体哪种不正当使用版权的性质，留给分析者的仍是一片空白。</p>
+<p><img src="https://github.com/user-attachments/assets/21671c47-40b8-4290-a26a-7ba6851d08a9" alt="3594285320roesor" /></p>
+<p>所谓类库，由于本身开发用途多样，源代码使用者自然会触及商业用途，因此为了顾及其商业用途的应用范围，自然要使用相关协议。而这篇文章仅仅是对LGPL协议正当使用做出解释，并为Forge进行辩护，因此并不会涉及揭露其具体对Forge源代码的内容。要搞清楚Forge诠释权的定义，我们应当首当其冲的分析LGPL协议的本质：</p>
+<blockquote>
+<p>a:你必须在你的文档中说明，你的程序中使用了 LGPL 库，并且说明这个库是基于 LGPL 发布的；</p>
+</blockquote>
+<blockquote>
+<p>b:你必须在你的应用程序发布中包含一份 LGPL协议，通常就是那个文本文件；</p>
+</blockquote>
+<blockquote>
+<p>c:你必须开放使用了 LGPL 库代码的所有代码，例如某些封装器。但是，其他使用这些封装器的代码就不需要开放了；</p>
+</blockquote>
+<blockquote>
+<p>d:你必须包含你的应用程序的余下部分的目标文件（通常就是我们所说的 .o 等等），或者是其他等价的文件。源代码并不是必须的</p>
+</blockquote>
+<p>显然，我们即便望文生义地看，网易也是一条责任都没有履行————我们无需在版权协议本身问题上对网易的侵权行为进行批驳，在这之前forge早已了做出对网易这类商业公司对其源码使用问题的考虑。而从Frogeloder得到的源文件几乎不能进行任何改动，因此，网易为了保住自己的乌纱帽，便对其源文件进行了流量混淆，也就是所谓的加密，这不仅仅是为了保全其版权的正当性，更是钻了微软官方许可的空子。</p>
+<h3 id="wei-ruan-eulaxu-ke-xie-yi-sheng-ming-de-que-xian">微软EULA许可协议声明的缺陷</h3>
+<p>根据官网Minewcraft官网<a href="https://www.minecraft.net/zh-hans/eula">https://www.minecraft.net/zh-hans/eula</a></p>
+<p>首先这个协议最大的问题不是对于mod创作相关的限制，而是整个协议都没有提及mod归属权滥用的问题：</p>
+<blockquote>
+<p>如果您已购买 Minecraft：Java 版，您可以尽情试用或通过改动、添加工具或插件（我们统称为“Mod”）来修改它。所谓“Mod”是指您或其他人的原创作品，不包含我们有版权的代码或内容的实质部分。当您将您的 Mod 与 Minecraft：Java 版 进行组合时，我们将这种组合称为游戏的“Mod 版本”。我们对哪些内容构成 Mod、哪些不构成 Mod 拥有最终决定权。您不得分发我们的游戏或软件的任何 Mod 版本，如果您没有使用 Mod 来恶意破坏，我们将不甚感激。基本上，Mod 可以分发；游戏客户端或服务器软件的 Mod 版本的入侵版本不可以分发。</p>
+</blockquote>
+<p>这是一个对于玩家售后制作mod协议的单向规定，我们暂且不论其合法性的问题，它仅仅提及了对于所谓mod版本不能由玩家自己发布的问题，而对于官方是否具有mod归属权|诠释权|使用权，以及官方是否承认其对mod及其相关组件是否应当保护等问题都没有具体约束。同时，Eula也为网易滥用Forgeloder仓库换来了正当性，既然如此，网易便可以无视用户自制mod的许可协议，跳过<strong>LGPL强制开源协议</strong>直接按照Eula漏洞调动Forge仓库API接口，而接口本身也是LGPL协议的保护范围，因此ForgeAPI更新了什么网易也理应进行报告，这个LGPL协议的保护范围，涉及Forge的所有类库。</p>
+<p>接着看下来所谓微软不准许用户对其产品协议滥用的问题：</p>
+<blockquote>
+<p>除此之外，我们对您做的事情要求非常宽松，事实上我们鼓励您做一些很酷的事情，只是不要做我们规定不能做的那些事情即可。我们已制定详细的 Minecraft 使用准则，说明您可以或不可以使用我们提供的内容（包括我们游戏的截图和录制的视频）做哪些事情。这些 Minecraft 使用准则是我们给予社区的额外权限，以鼓励创造力和社区互动，但我们保留更改它们或撤回权限的权利，尤其是当我们看到有人利用或滥用这些权限时。Minecraft 使用准则经常更改，并且我们有权在任何时候撤回其中的权限，而不另行通知。</p>
+</blockquote>
+<p>也就是说，微软只要遇上所谓滥用，或者说某个组件管理器的开源协议对官方利益造成不利，微软便可以趁机修改Eula条款，不得不说这个条款是真的妙。而这个条款，对于毫无合法性的微软官方亦或者对开源社区来说，都是无效的。</p>
+<p><img src="https://github.com/user-attachments/assets/ed4176ff-0b4e-4219-9238-159c80d7d227" alt="14" /></p>
+<h1 id="ke-hu-duan-yu-forgeclient">客户端与forgeclient</h1>
+<h3 id="yi-cheatbreakerhe-yi-zhong-zhuan-you-de-legit-clientgai-he-qu-he-cong">以cheatbreaker和一众专有的legit client该何去何从？</h3>
+<p>前面的章节中，我们一直都没有阐述关于开源hack组件与legit client的本质区别，如果按照Eula这个治标不治本的所谓准则出发，那么显然对于一些基于Forge开发的hackclient，比如wurst、LiquidBounce，它们便是有一个共同点，那就是所有的开发也都基于Forgeloder，与网易不同的是，它们普遍开源。然而部分hackclient例如Vape client则是一个完全和legit client一样具备基本的实用性mod的客户端。这些部分的hackclient和legitclinet既然都考虑了实用性，自然会去把mod和游戏整合在一起发布，那么自然也就符合了微软Eula准则的所谓mod版本构成条件，显然，是违背微软的准则的侵权行为。</p>
+<p>为什么某些人总是不仅仅限于高喊要反对hmcl反对multimc等一众第三方启动器，并且仅仅把它们视为所谓正版启动器的敌人呢？而不是去批驳那些被微软称之为mod版本的pvp client呢？更可笑的是，这些所谓的正版辩护士仅仅把问题放在离线和正版账号上，而不是将微软自己的准则视为正版的构成条件。请问这些先生读过Eula没有？如果正版不是按照微软那些治标不治本的准则来，那我们是否应该反对pvp，将其视为穷途末路，甚至将一切追求实用性先进理念的客户端全部当作盗版消灭掉呢？反过来说，难道我们还有理由责备hackclient和第三方启动器把这个侵权用的太少了吗？</p>
+<p><img src="https://github.com/user-attachments/assets/46681166-4a20-4de3-8130-ce204e7cd0ac" alt="460949039204" /></p>
+<h3 id="kai-yuan-clientji-di-san-fang-qi-dong-qi-yu-zhuan-you-pvpclientde-ben-zhi-qu-bie">开源client及第三方启动器与专有pvpclient的本质区别</h3>
+<p>我们开宗明义地说，但凡是仔细研究过这些开源client的github项目的人，都知道它们与传统的基于安装包更新方式的客户端的本质区别是它们基于api接口更新。而从根本问题上讲它们的api接口虽然在更新方式上讲自然是趋于稳定的，要知道一个api更新可以只调用github静态托管的仓库，并且打包下来能够直接将接收的文件替换为更新内容。最具代表性的启动器就是知名legit client————cheatbreaker</p>
+<p>而这样的客户端由一个显著的缺点————它容易受到一些反对开源的资产阶级政府的审查，基于安装包更新方式的client则完全不同————只要其拥有当地政府的备案和授权，便可以在审查下进行更新。我们只能用澜恒的一句话来总结我们的任务————开源还有很长的路要走；让我们把这条艰难的道路走下去。</p>
+<p><img src="https://github.com/user-attachments/assets/5b6b6f87-15cd-4a13-be34-90d449ebe16b" alt="13" /></p>
+
+        </div>
+    </article>
+</main>
+
+        </main>
+
+        <footer>
+            <div class="footer-content">
+            <div class="footer-content-left">
+                
+            </div>
+            <div class="footer-content-right">
+                
+                <a href="https:&#x2F;&#x2F;twitter.com&#x2F;jekyllrb">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="20">
+                        <path fill="#1e1e1e" d="M0 781.864q0 7.32 7.32 13.176 12.2 8.296 43.432 24.4 119.072 61.488 249.856 61.488 162.992 0 296.216 -83.936 63.44 -40.016 112.728 -96.38t78.324 -117.608 43.432 -122.732 13.42 -119.56v-17.08q57.096 -40.992 89.304 -93.696 2.928 -5.856 2.928 -8.784 0 -6.344 -4.88 -11.224t-11.224 -4.88q-3.416 0 -11.712 3.904 -5.856 1.952 -14.396 4.88t-14.64 5.124 -8.052 2.684q12.688 -14.152 26.352 -38.308t13.664 -35.38q0 -6.344 -4.88 -10.98t-11.712 -4.636q-3.904 0 -7.808 2.44 -55.632 29.768 -103.944 40.504 -59.048 -56.12 -141.032 -56.12 -83.936 0 -142.984 58.56t-59.048 141.52q0 14.64 1.952 23.912 -82.472 -6.832 -159.088 -39.528t-137.616 -87.84q-14.152 -13.664 -54.656 -57.096 -5.856 -5.856 -13.664 -5.856 -5.856 0 -12.2 7.808 -12.688 19.032 -20.008 46.604t-7.32 53.924q0 72.712 45.384 126.88l-14.152 -6.832q-12.2 -5.368 -18.056 -5.368 -8.296 0 -13.908 4.88t-5.612 12.688q0 51.24 26.352 97.112t71.248 73.2l-5.856 -.976q-.976 0 -2.684 -.488t-2.684 -.732 -1.464 -.244q-6.344 0 -10.98 4.88t-4.636 10.736q0 .488 .976 5.368 16.592 50.752 55.144 86.132t90.28 47.58q-84.912 52.216 -187.392 52.216 -6.832 0 -21.96 -1.464 -20.496 -.976 -22.448 -.976 -6.344 0 -10.98 4.88t-4.636 11.224z"/>
+                    </svg>
+                </a>
+                
+                
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;sirodoht&#x2F;zola-henry">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="20">
+                        <path fill="#1e1e1e" d="M512 0C229.25 0 0 229.25 0 512c0 226.25 146.688 418.125 350.156 485.812 25.594 4.688 34.938-11.125 34.938-24.625 0-12.188-.469-52.562-.719-95.312C242 908.812 211.906 817.5 211.906 817.5c-23.312-59.125-56.844-74.875-56.844-74.875-46.531-31.75 3.53-31.125 3.53-31.125 51.406 3.562 78.47 52.75 78.47 52.75 45.688 78.25 119.875 55.625 149 42.5 4.654-33 17.904-55.625 32.5-68.375-113.656-12.937-233.218-56.875-233.218-253.063 0-55.938 19.969-101.562 52.656-137.406-5.219-13-22.844-65.094 5.062-135.562 0 0 42.938-13.75 140.812 52.5 40.812-11.406 84.594-17.031 128.125-17.219 43.5.188 87.312 5.875 128.188 17.281 97.688-66.312 140.688-52.5 140.688-52.5 28 70.531 10.375 122.562 5.125 135.5 32.812 35.844 52.625 81.469 52.625 137.406 0 196.688-119.75 240-233.812 252.688 18.438 15.875 34.75 47 34.75 94.75 0 68.438-.688 123.625-.688 140.5 0 13.625 9.312 29.562 35.25 24.562C877.438 930 1024 738.125 1024 512 1024 229.25 794.75 0 512 0z"/>
+                    </svg>
+                </a>
+                
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
